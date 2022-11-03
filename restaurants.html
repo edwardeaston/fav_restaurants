@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Travel Site</title>
-  <link rel="stylesheet" type = "text/css" href="stylesheet.css"> 
-</head>
-<body>
-  <h1 id="header1">Welcome to my Travel Site</h1>
-  <p>This site is all about where I want to travel.</p>
+  <head>
+    <title>My Favorite Restaurants</title>
+  </head>
+  <body>
+    <h1 id="header1">Eddie's Top 5 Restaurants</h1>
+    <p>This site is all about my favorite restaurants.</p>
+    <h2>Here are some places I love to eat!</h2>
+    <ul>
+      <li>
+        <a 
+        href="https://www.portofinopizzaandpasta.com" 
+        target = "_blank">Portofino's</a>
+        <br>
+        <img 
+        src = "assets\portofino.webp" 
+        alt = "Image of Portofino's" 
+        height = "447" 
+        width = "747">
+      </li>
+      <li>
+        <a 
+        href="https://www.sushiden.net" 
+        target = "_blank">Sushi Den</a>
+        <br>
+        <img 
+        src = "assets\SUSHI_DEN.jpg" 
+        alt = "Image of Sushi Den" 
+        height = "447" 
+        width = "747">
+      </li>
+      <li>
+        <a 
+        href="https://www.thepinkdoor.net" 
+        target = "_blank">The Pink Door</a>
+        <br>
+        <img 
+        src = "assets\pinkdoor.jpg" 
+        alt = "Image of The Pink Door" 
+        height = "447" 
+        width = "747">
+      </li>
+      <li>
+        <a 
+        href="https://www.dougsdiner.com" 
+        target = "_blank">Doug's Diner</a>
+        <br>
+        <img 
+        src = "assets\dougs.jpg" 
+        alt = "Image of Doug's Diner" 
+        height = "447" 
+        width = "747">
+      </li>
+      <li>
+        <a 
+        href="#mykitchen" 
+        target = "_blank">My Kitchen</a>
+        <br>
+        <img 
+        src = "assets\mykitchen.jpg" 
+        alt = "Image of a Random Kitchen" 
+        height = "447" 
+        width = "747">
+      </li>
+    </ul>
+    <!-- End of List-->
+    <table class="table">
+    <tr>
+      <th>Destination</th>
+      <th>Capital</th>
+      <th>Official Language</th>
+    </tr>
+    <tr>
+      <td>South Korea</td>
+      <td>Seoul</td>
+      <td>Korean</td>
+    </tr>
+    <tr>
+      <td>Japan</td>
+      <td>Tokyo</td>
+      <td>Japanese</td>
+    </tr>
+    </table>
+    <br>
+    <h2>Where do you want to visit?</h2>
+    <form>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name">
 
-  <h2>Here are some places I'd like to visit</h2>
-  <ul>
-    <li>
-      <a 
-      href="https://www.korea.net" 
-      target = "_blank">South Korea</a>
-      <br>
-      <img 
-      src = "assets/south_korea.jpg" 
-      alt = "Image of South Korea" 
-      height = "447" 
-      width = "747">
-    </li>
-    <li>
-      <a 
-      href="https://www.japan.travel/en/" 
-      target = "_blank">Japan</a>
-      <br>
-      <img 
-      src = "assets/Japan.webp" 
-      alt = "Japan" 
-      height = "447" 
-      width = "747">
-    </li>
-  </ul>
-  <!-- End of List-->
-  <table class="table">
-  <tr>
-    <th>Destination</th>
-    <th>Capital</th>
-    <th>Official Language</th>
-  </tr>
-  <tr>
-    <td>South Korea</td>
-    <td>Seoul</td>
-    <td>Korean</td>
-  </tr>
-  <tr>
-    <td>Japan</td>
-    <td>Tokyo</td>
-    <td>Japanese</td>
-  </tr>
-  </table>
-  <br>
-  <h2>Where do you want to visit?</h2>
-  <form>
-    <label for="name">Name: </label>
-    <input type="text" id="name" name="name">
+      <p>Select any that apply:</p>
+      <label for ="korea">South Korea</label>
+      <input type ="checkbox" id="korea" name="korea"><br>
 
-    <p>Select any that apply:</p>
-    <label for ="korea">South Korea</label>
-    <input type ="checkbox" id="korea" name="korea"><br>
+      <label for="japan">Japan</label>
+      <input type="checkbox" id="japan" name="Japan"><br><br>
 
-    <label for="japan">Japan</label>
-    <input type="checkbox" id="japan" name="Japan"><br><br>
+      <label for="type">What is your favorite type of travel locations?</label>
+      <select id="type" name="type">
+          <option value="beach">Beach</option>
+          <option value="mountains">Mountains</option>
+          <option value="city" selected>City</option>
+      </select>
 
-    <label for="type">What is your favorite type of travel locations?</label>
-    <select id="type" name="type">
-        <option value="beach">Beach</option>
-        <option value="mountains">Mountains</option>
-        <option value="city" selected>City</option>
-    </select>
+      <br><br>
+      <textarea id="bio" name="bio" rows="7" cols="50">
+        Tell me a bit more about yourself.
+      </textarea>
 
-    <br><br>
-    <textarea id="bio" name="bio" rows="7" cols="50">
-      Tell me a bit more about yourself.
-    </textarea>
+      <br><br>
+      <input type=submit value="Ok Go!">
 
-    <br><br>
-    <input type=submit value="Ok Go!">
-
-  </form>
-  <br>
- 
-  <div>
-    <h2>There are so many great places to travel!</h2>
-  </div>
-</body>
+    </form>
+    <br>
+  
+    <div>
+      <h2>There are so many great places to travel!</h2>
+    </div>
+  </body>
 </html>
